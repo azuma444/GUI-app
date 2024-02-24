@@ -10,7 +10,7 @@ class MainWindow(Qw.QMainWindow):
     def __init__(self):
         super().__init__()
         
-        self.setWindowTitle('YourCalculation')
+        self.setWindowTitle('DailyCalculation')
         self.setGeometry(100, 50, 400, 300) 
 
     #Question関連
@@ -32,10 +32,9 @@ class MainWindow(Qw.QMainWindow):
         
     def tof(self):
         if self.ans.text() == str(c.ans):
-            print('正解！')
-            
+            print("正解！")
         else:
-            print('不正解')
+            print("不正解")
 
 
 if __name__ == '__main__':
